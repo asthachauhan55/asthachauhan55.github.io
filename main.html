@@ -1,85 +1,56 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>DIGIBUDD</title>
-    <link rel="stylesheet" href="style.css">
-    <!---we had linked our css file----->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DigiBudd</title>
+    <link rel="stylesheet" href="index4.css">
 </head>
 
 <body>
-    <div class="full-page">
-        <div class="navbar">
-            <div>
-                <h1>
-                    <a href='website.html'>
-                        <p style="font-style: italic"><b>DIGIBUDD</b></a>
-                    </p>
-                    <H2>
-                        <p style="font-style: italic;">Your Digital Buddy..</p>
-                    </H2>
+    <header>
+        <nav>
+            <ul id='MenuItems'>
+                <li><a href='index4.html'>Home</a></li>
+                <li><a href='index.html'>About Us</a></li>
+                <li><a href='#'>Services</a></li>
+                <li><a href='#'>Contact</a></li>
+
+            </ul>
+        </nav>
+
+        <h1 class="big-title translate" data-speed="0.1">You Made It!</h1>
+
+        <img src="images/hi.gif" class="person translate" data-speed="-0.25" alt="">
+        <img src="images/mountain1.png" class="mountain1 translate" data-speed="-0.2" alt="">
+        <img src="images/mountain2.png" class="mountain2 translate" data-speed="0.4" alt="">
+        <img src="images/mountain3.png" class="mountain3 translate" data-speed="0.3" alt="">
+        <img src="images/sky.png" class="sky translate" data-speed="0.5" alt="">
+    </header>
+
+    <section>
+        <div class="shadow"></div>
+
+        <div class="container">
+            <div class="content opacity">
+                <h3 class="title">
+                    About
+                    <div class="border"></div>
+                </h3>
+                <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque officiis quos expedita ipsa, a quidem inventore voluptates debitis accusamus tenetur qui et voluptas dicta, culpa earum, doloribus odio consectetur consequuntur soluta quasi
+                    nobis! Deserunt voluptatum reiciendis iure expedita sequi quisquam laboriosam temporibus exercitationem.</p>
             </div>
-            <nav>
-                <ul id='MenuItems'>
-                    <li><a href='#'>Home</a></li>
-                    <li><a href='#'>About Us</a></li>
-                    <li><a href='#'>Services</a></li>
-                    <li><a href='#'>Contact</a></li>
-                    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button></li>
-                </ul>
-            </nav>
-        </div>
-        <div id='login-form' class='login-page'>
-            <div class="form-box">
-                <div class='button-box'>
-                    <div id='btn'></div>
-                    <button type='button' onclick='login()' class='toggle-btn'>Log In</button>
-                    <button type='button' onclick='register()' class='toggle-btn'>Register</button>
-                </div>
-                <form id='login' class='input-group-login'>
-                    <input type='text' class='input-field' placeholder='Email Id' required>
-                    <input type='password' class='input-field' placeholder='Enter Password' required>
-                    <input type='checkbox' class='check-box'><span>Remember Password</span>
-                    <button type='submit' class='submit-btn'>Log in</button>
-                </form>
-                <form id='register' class='input-group-register'>
-                    <input type='text' class='input-field' placeholder='First Name' required>
-                    <input type='text' class='input-field' placeholder='Last Name ' required>
-                    <input type='email' class='input-field' placeholder='Email Id' required>
-                    <input type='password' class='input-field' placeholder='Enter Password' required>
-                    <input type='password' class='input-field' placeholder='Confirm Password' required>
-                    <input type='checkbox' class='check-box'><span>I agree to the terms and                                                   conditions</span>
-                    <button type='submit' class='submit-btn'>Register</button>
-                </form>
+
+            <div class="imgContainer opacity">
+                <img src="images/s.gif" alt="">
             </div>
         </div>
-    </div>
-    <script>
-        var x = document.getElementById('login');
-        var y = document.getElementById('register');
-        var z = document.getElementById('btn');
+    </section>
 
-        function register() {
-            x.style.left = '-400px';
-            y.style.left = '50px';
-            z.style.left = '110px';
-        }
-
-        function login() {
-            x.style.left = '50px';
-            y.style.left = '450px';
-            z.style.left = '0px';
-        }
-    </script>
-    <script>
-        var modal = document.getElementById('login-form');
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
+    <script src="index4.js"></script>
 </body>
 
 </html>
